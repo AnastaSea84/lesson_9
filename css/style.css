@@ -105,6 +105,11 @@ body {
     padding: 10px 0;
 }
 
+.header__list li {
+    text-align-last: left;
+}
+
+
 /* Меню 2-го уровня -------------- */
 
 .header__sub-list {
