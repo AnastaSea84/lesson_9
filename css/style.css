@@ -1,0 +1,1581 @@
+/* Шрифты ============ */
+
+/* font-family: 'The Girl Next Door', cursive; ------*/
+
+@import url('https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap');
+
+/* font-family: 'Truculenta', sans-serif; -------------*/
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@200;400;600;700&display=swap');
+
+
+/* Обнуляющий стиль =============*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* ================================= */
+
+/* Общие стили ------- */
+
+body {
+    font-family: 'Truculenta', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    background-color: #cfd2dc;
+}
+
+.main {
+    background: url(../img/8.jpg) 0 0 / 100% auto no-repeat;
+    padding: 30px 0 0 0;
+}
+
+
+/* HEADER ==================== */
+
+.header {
+    background-color: rgb(80 76 76 / 54%);
+    position: sticky;
+    top: 16px;
+    z-index: 10;
+}
+
+.header__container {
+    max-width: 80%;
+    margin: 0px auto;
+    text-align: right;
+}
+
+/* Header menu ---------------------- */
+
+/* Главное меню ------------ */
+
+.header__list {
+    font-size: 0;
+}
+
+.header__list>li {
+    position: relative;
+    display: inline-block;
+    margin: 0px 40px 0px 0px;
+}
+
+.header__list>li:last-child {
+    margin-right: 0;
+}
+
+.header__link {
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+/* Меню 2-го уровня -------------- */
+
+.header__sub-list {
+    position: absolute;
+    top: 100%;
+    left: -19px;
+    background-color: rgb(114 112 112 / 73%);
+    max-width: 200px;
+    padding: 5px 15px;
+    display: none;
+}
+
+.header__sub-list li {
+    margin: 0px 0px 10px 0px;
+    position: relative;
+}
+
+.header__sub-list li:last-child {
+    margin-bottom: 0;
+}
+
+.header__sub-link {
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+}
+
+/* Меню 3-го уровня ------------- */
+
+.header__sub-menu {
+    position: absolute;
+    left: 100%;
+    top: -2px;
+    background-color: rgb(50 48 48 / 64%);    max-width: 150px;
+    padding: 5px 10px;
+    display: none;
+}
+
+.header__sub-menu-link {
+    font-size: 20px;
+    font-weight: 200;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+}
+
+/* Меню 4-го уровня -------------- */
+
+.header__small-menu {
+    position: absolute;
+    top: -3px;
+    left: 100%;
+    max-width: 110px;
+    padding: 4px 8px;
+    display: none;
+    background-color: rgb(54 44 44 / 71%);
+}
+
+.header__small-menu-link {
+    font-size: 16px;
+    font-weight: 200;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+}
+
+/* Hover всех меню ------------------- */
+
+.header__list>li:hover .header__link {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 2px 3px rgb(255 255 255);
+}
+
+.header__sub-list li:hover .header__sub-link,
+.header__sub-menu li:hover .header__sub-menu-link,
+.header__sub-menu-link:hover,
+.header__small-menu-link:hover {
+    text-shadow: 1px 1px 1px black;
+}
+
+.header__list>li:hover .header__sub-list {
+    display: block;
+}
+
+.header__sub-list>li:hover .header__sub-menu {
+    display: block;
+}
+
+.header__sub-menu>li:hover .header__small-menu {
+    display: block;
+}
+
+/* Позиц. в последнем пункте главного меню ------------ */
+
+.header__list>li:last-child .header__sub-list {
+    left: auto;
+    right: 0px;
+}
+
+.header__list>li:last-child .header__sub-menu {
+    left: auto;
+    right: 100%;
+}
+
+.header__list>li:last-child .header__small-menu {
+    left: auto;
+    right: 100%;
+}
+/* ================================================== */
+
+/* TOP CONTENT ============== */
+
+.wrapper {
+    padding: 10px;
+}
+
+.top-content {
+max-width: 70%;
+margin: 0px 0px 44px 33px;
+
+}
+
+.top-content .text {
+margin: 0px 0px 30px 0px;
+}
+.top-content .text::first-letter {
+font-weight: 600;
+font-size: 26px;
+}
+
+/* MAIN BLOCK ============== */
+
+.main-block {
+}
+
+.arrow-up {
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    bottom: 20px;
+    right: 20px;
+    filter: drop-shadow(3px 3px 1px black);
+}
+
+.aside-text {
+    position: absolute;
+    top: 110px;
+    right: -185px;
+    width: 366px;
+    height: 100px;
+    font-family: 'The Girl Next Door', cursive;
+    font-size: 31px;
+    font-weight: 700;
+    color: #996634;
+    text-shadow: 1px 0px 1px #a28c68;
+}
+
+/* ============== CAR BLOCK ============= */
+
+    .car-block {
+        position: relative;
+        width: 1200px;
+        height: 800px;
+        margin: 0px 0 55px 10px;
+    }
+
+/* ----------- БАГАЖНИК ---------- */
+
+.car__trunk {
+    position: relative;
+    display: inline-block;
+    width: 650px;
+    height: 200px;
+    left: 180px;
+    }
+
+/* Основа багажника ------------- */
+
+.trunk__base {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    width: 563px;
+    height: 9px;
+    background-color: #443f3f;
+    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+}
+
+/* Ножки багажника ------- */
+
+.trunk__base::after {
+    content: '';
+    position: absolute;
+    left: 46px;
+    top: 4px;
+    width: 5px;
+    height: 36px;
+    z-index: 4;
+    border-radius: 0px 0px 27px 23px;
+    background-color: #443f3f;
+}
+.trunk__base::before {
+    content: '';
+    position: absolute;
+    right: 120px;
+    top: 3px;
+    width: 5px;
+    height: 38px;
+    z-index: 4;
+    border-radius: 0px 0px 27px 23px;
+    background-color: #443f3f;
+}
+
+/* Чемоданы --------------- */
+
+.trunk__luggage {
+    position: absolute;
+    width: 400px;
+    height: 183px;
+    bottom: 32px;
+    left: 16px;
+    filter: drop-shadow(2px 4px 4px black);
+}
+
+/* Сумка-1 ------------------- */
+
+.luggage__bag-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 119px;
+    height: 83px;
+    border-radius: 5px;
+    box-shadow: inset 1px 0px 10px 3px #5d3b17, inset 1px 0px 20px 10px #827465;
+    background: url(../img/5.png) 60px 55px / 31px no-repeat, #727848;
+}
+
+/* Углы сумки-1 ----------------------*/
+
+.luggage__bag-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border: 1px solid #575555;
+    border-radius: 12px 249px 34px 400px / 350px 222px 168px 350px;
+    box-shadow: -1px 1px 0px #462f14, inset 0px -1px 4px 1px #5f5c5c;
+}
+.luggage__bag-1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border: 1px solid #575555;
+    border-radius: 136px 278px 234px 4px / 145px 0px 201px 245px;
+    box-shadow: 1px 1px 0px #462f14, inset 0px -1px 4px 1px #5f5c5c;
+}
+
+.luggage__bag-1 .bag__invisible::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border: 1px solid #575555;
+    border-radius: 0px 269px 0px 134px / 134px 256px 108px 116px;
+    box-shadow: 1px -1px 0px #462f14, inset 0px -1px 4px 1px #5f5c5c;
+}
+.luggage__bag-1 .bag__invisible::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -24px;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border: 1px solid #575555;
+    border-radius: 400px 0px 119px 69px / 350px 215px 119px 0px;
+    box-shadow: -1px -1px 0px #462f14, inset 0px -1px 4px 1px #5f5c5c;
+}
+
+/* Ручка сумки-1 ---------------- */
+
+.luggage__bag-1 .bag-handle {
+    position: absolute;
+    bottom: 83px;
+    left: 43px;
+    width: 35px;
+    height: 10px;
+    border-right: 5px solid #4f3719;
+    border-left: 5px solid #4f3719;
+    border-top: 3px solid #4f3719;
+    border-radius: 7px 7px 0 0;
+    box-shadow: 1px -1px 1px 0px wheat;
+}
+
+/* Замки воле ручки сумки-1 ------------------ */
+
+.luggage__bag-1 .bag-handle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -23px;
+    width: 8px;
+    height: 2px;
+    background-color: gray;
+    border: 1px solid #635d5de0;
+}
+
+.luggage__bag-1 .bag-handle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -21px;
+    width: 8px;
+    height: 2px;
+    background-color: gray;
+    border: 1px solid #635d5de0;
+}
+
+/* Ремни сумки-1 --------------------- */
+
+.luggage__bag-1 .bag__inner {
+    position: absolute;
+    bottom: 0px;
+    left: 17px;
+    width: 86px;
+    height: 83px;
+    border-right: 8px solid #553615;
+    border-left: 8px solid #553615;
+    border-radius: 15px 17px 17px 15px / 10px 9px 7px 7px;
+}
+.luggage__bag-1 .bag__inner::before {
+    content: '';
+    position: absolute;
+    top: 27px;
+    left: -9px;
+    width: 10px;
+    height: 12px;
+    background-color: gray;
+    box-shadow: 0px -1px 1px black, inset 0px -1px 4px 1px #5f5c5c;
+    border: 1px solid #484545;
+}
+.luggage__bag-1 .bag__inner::after {
+    content: '';
+    position: absolute;
+    top: 27px;
+    right: -9px;
+    width: 10px;
+    height: 12px;
+    background-color: gray;
+    box-shadow: 0px -1px 1px black, inset 0px -1px 4px 1px #5f5c5c;
+    border: 1px solid #484545;
+}
+
+/* Сумка-2 ------------------- */
+
+.luggage__bag-2 {
+    position: absolute;
+    bottom: 0;
+    left: 123px;
+    width: 161px;
+    height: 111px;
+    border-radius: 5px;
+    box-shadow: inset 1px 0px 10px 3px #45748a, inset 1px 0px 20px 10px #68e3dc;
+    background: url('../img/3.png') 83px 9px / 35px no-repeat, #7effed;
+}
+
+/* Углы сумки-2 ----------------------*/
+
+.luggage__bag-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #b5abab;
+    border: 1px solid #927f7f;
+    box-shadow: -1px 1px 0px #394274, inset 0px -1px 4px 1px #5f5c5c;
+    border-radius: 12px 249px 34px 400px / 350px 222px 168px 350px;
+}
+.luggage__bag-2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #b5abab;
+    border: 1px solid #927f7f;
+    box-shadow: 1px 1px 0px #394274, inset 0px -1px 4px 1px #5f5c5c;
+    border-radius: 136px 278px 234px 4px / 145px 0px 201px 245px;
+}
+.luggage__bag-2 .bag__invisible::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -31px;
+    width: 12px;
+    height: 12px;
+    background-color: #b5abab;
+    border: 1px solid #927f7f;
+    box-shadow: 1px -1px 0px #394274, inset 0px -1px 4px 1px #5f5c5c;
+    border-radius: 0px 269px 0px 134px / 134px 256px 108px 116px;
+}
+.luggage__bag-2 .bag__invisible::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -36px;
+    width: 12px;
+    height: 12px;
+    background-color: #b5abab;
+    border: 1px solid #927f7f;
+    box-shadow: -1px -1px 0px #394274, inset 0px -1px 4px 1px #5f5c5c;
+    border-radius: 400px 0px 119px 69px / 350px 215px 119px 0px;
+}
+
+/* Ручка сумки-2 ---------------- */
+
+.luggage__bag-2 .bag-handle {
+    position: absolute;
+    bottom: 111px;
+    left: 53px;
+    width: 47px;
+    height: 16px;
+    border-right: 8px solid #7a5834;
+    border-left: 8px solid #7a5834;
+    border-top: 6px solid #7a5834;
+    border-radius: 7px 7px 0 0;
+    box-shadow: 1px -1px 1px 0px wheat;
+}
+
+/* Замки воле ручки сумки-2 ------------------ */
+
+.luggage__bag-2 .bag-handle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -26px;
+    width: 13px;
+    height: 3px;
+    background-color: #5f5757;
+    border: 1px solid #ccc1c1e0;
+}
+
+.luggage__bag-2 .bag-handle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    width: 13px;
+    height: 3px;
+    background-color: #5f5757;
+    border: 1px solid #ccc1c1e0;
+}
+
+/* Ремни сумки-2 --------------------- */
+
+.luggage__bag-2 .bag__inner {
+    position: absolute;
+    bottom: 0px;
+    left: 17px;
+    width: 121px;
+    height: 111px;
+    border-right: 14px solid #7a5834;
+    border-left: 14px solid #7a5834;
+}
+.luggage__bag-2 .bag__inner::before {
+    content: '';
+    position: absolute;
+    top: 27px;
+    left: -14px;
+    width: 14px;
+    height: 25px;
+    background-color: #bbc048;
+    box-shadow: 0px -1px 1px #8e8b49, inset 0px -1px 4px 1px #5795b1;
+    border: 1px solid #d9e560;
+}
+.luggage__bag-2 .bag__inner::after {
+    content: '';
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    width: 14px;
+    height: 25px;
+    background-color: #bbc048;
+    box-shadow: 0px -1px 1px #8e8b49, inset 0px -1px 4px 1px #5795b1;
+    border: 1px solid #d9e560;
+}
+
+/* Сумка-3 (мешок) ------------------------ */
+
+.luggage__bag-3 {
+    position: relative;
+    left: 293px;
+    top: -7px;
+    width: 120px;
+    height: 188px;
+}
+.bag-3__bottom {
+    position: absolute;
+    width: 110px;
+    height: 130px;
+    bottom: 0px;
+    left: -7px;
+    z-index: 2;
+    background-color: goldenrod;
+    border: 1px dashed #9f7223f2;
+    border-radius: 194px 202px 90px 109px / 337px 349px 58px 61px;
+    box-shadow: inset 1px -3px 16px 4px #ba8a3a, 5px 1px 1px 1px #95772e, inset -4px 6px 20px 5px #4a4232;
+}
+
+.bag-3__bottom::before {
+    content: '';
+    position: absolute;
+    left: 27px;
+    top: 3px;
+    width: 58px;
+    height: 4px;
+    background-color: #42331e;
+    border: 0.5px dashed wheat;
+    border-radius: 40px 29px 39px 23px / 18px 18px 20px 15px;
+    box-shadow: 0px -5px 0px 0px #382c21, 1px 2px 0px 0px #72583f, 1px -1px 0px 0px #ab6d2e;
+}
+.bag-3__bottom::after {
+    content: '';
+    position: absolute;
+    right: 13px;
+    bottom: 10px;
+    width: 41px;
+    height: 30px;
+    background: url(../img/4.png) 0px -8px / 42px no-repeat, #be9964;
+    border: 0.5px dashed wheat;
+    border-radius: 38px 278px 321px 400px / 39px 342px 181px 299px;
+    box-shadow: 1px 1px 3px 0px #382c21, inset -1px -1px 9px 0px #72583f;
+}
+
+.bag-3__bottom span {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-family: 'The Girl Next Door', cursive;
+    font-size: 52px;
+    color: #4a443c;
+    text-shadow: -2px -2px 0px #e3a9a9;
+}
+
+.bag-3__top {
+    position: absolute;
+    top: 16px;
+    left: 21px;
+    width: 55px;
+    height: 53px;
+    background-color: goldenrod;
+    border: 1px dashed #9f7223f2;
+    box-shadow: inset 1px -3px 16px 4px #ba8a3a, 3px 0px 1px 1px #95772e, inset 2px -16px 11px 0px #4a4232;
+    border-radius:400px 376px 498px 420px / 148px 143px 384px 399px;
+}
+
+/* Девочка ---------- */
+
+.luggage__girl {
+    position: absolute;
+    top: -16px;
+    right: 62px;
+    width: 183px;
+    height: 300px;
+    z-index: 9;
+    background: url(../img/6.png) 0 0 / 185px no-repeat;
+    filter: drop-shadow(3px 3px 6px rgb(78, 77, 77));
+}
+
+/* КУЗОВ ======================== */
+
+.car__body {
+    position: relative;
+    display: inline-block;
+    width: 1140px;
+    height: 600px;
+    top: -7px;
+}
+
+.body__main {
+    position: absolute;
+    top: 0px;
+    left: 147px;
+    width: 682px;
+    height: 406px;
+    z-index: 2;
+    background-color: #da9006;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.body__main-inner {
+    position: absolute;
+    bottom: 12px;
+    left: 23px;
+    width: 641px;
+    height: 380px;
+    z-index: 2;
+    background-color: #4a4232;
+}
+
+/* Постер ------------- */
+
+.main-inner__poster {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    height: 340px;
+    margin: 20px;
+    border: 1px dashed wheat;
+}
+
+.poster__line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 240px;
+    margin: 13px;
+    border-top: 2px solid wheat;
+    border-right: 2px solid wheat;
+    box-shadow: inset -3px 3px 2px #a99837, inset -6px 6px 2px #090807;
+}
+
+/* Птица -------- */
+
+.poster__bird {
+    position: relative;
+    display: inline-block;
+    top: -2px;
+    left: -22px;
+    filter: drop-shadow(2px 2px 2px wheat);
+}
+
+/* Тело птицы ---------- */
+
+.bird__body {
+    position: absolute;
+    top: 116px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-bottom: 7px solid wheat;
+    box-shadow: -2px 8px 0px 2px #a99837, inset 3px -12px 0px #251b07, -5px 17px 0px 2px #150509;
+}
+
+/* Ноги птицы -------------- */
+
+.bird__body::after {
+    content: '';
+    position: absolute;
+    bottom: -94px;
+    left: 27px;
+    width: 4px;
+    height: 75px;
+    background-color: #0d0903;
+}
+.bird__body::before {
+    content: '';
+    position: absolute;
+    bottom: -94px;
+    left: 51px;
+    width: 4px;
+    height: 75px;
+    background-color: #0f0b03;
+}
+
+/* Голова птицы ---------- */
+
+.bird__head {
+    position: absolute;
+    top: 126px;
+    left: 80px;
+    width: 80px;
+    height: 80px;
+    z-index: 3;
+    border-radius: 50%;
+    border-top: 7px solid rgb(255, 255, 255);
+    box-shadow: 0px -9px 0px 0px #a99837, inset 0px 6px 0px #251b07, 0px -13px 0px 1px #150509;
+}
+
+.bird__head::after {
+    content: '';
+    position: absolute;
+    bottom: 37px;
+    left: 0;
+    width: 80px;
+    height: 1px;
+    background-color: rgb(37 27 7);
+}
+
+/*  Глаз птицы -------------- */
+
+.bird__head::before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    right: 22px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #150509;
+    box-shadow: inset 2px 1px 0px #c7c1bb, inset 4px 1px 0px #7a6855;
+}
+
+/* Клюв птицы --------------------- */
+
+.bird__beak {
+    position: absolute;
+    top: 149px;
+    left: 150px;
+    width: 10px;
+    height: 20px;
+    z-index: 1;
+    background-color: #251b07;
+}
+
+/* Птичий багаж на постере ---------------- */
+
+.poster__bird-luggage {
+    position: relative;
+    display: inline-block;
+    top: 139px;
+    left: 179px;
+    filter: drop-shadow(2px 2px 2px wheat);
+}
+
+/* Тележка -------- */
+
+.bird-luggage__truck {
+    position: absolute;
+    top: 84px;
+    left: -39px;
+    width: 126px;
+    height: 66px;
+    border-left: 4px solid #251b07;
+    border-bottom: 4px solid #251b07;
+    border-radius: 0px 20px;
+}
+
+.bird-luggage__truck::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -21px;
+    width: 20px;
+    height: 4px;
+    background-color: #251b07;
+}
+
+.bird-luggage__truck::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    right: 0px;
+    width: 4px;
+    height: 20px;
+    background-color: #251b07;
+}
+
+/* Колёса тележки ------ */
+
+.truck__wheel:first-child {
+    position: absolute;
+    bottom: -19px;
+    left: 7px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 4px solid #251b07;
+}
+
+.truck__wheel:first-child::before,
+.truck__wheel:last-child::before
+{
+    content: '';
+    position: absolute;
+    left: 12px;
+    bottom: -2px;
+    width: 4px;
+    height: 31px;
+    background-color: #251b07;
+}
+
+.truck__wheel:last-child {
+    position: absolute;
+    bottom: -20px;
+    right: 8px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 4px solid #251b07;
+}
+
+/* Коробка ---------- */
+
+.bird-luggage__box {
+    position: absolute;
+    top: 67px;
+    left: -25px;
+    width: 104px;
+    height: 60px;
+    border: 4px solid #251b07;
+}
+
+.bird-luggage__box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 16px;
+    margin: 6px 59px;
+    border: 2px dotted #251b07;
+}
+
+/* Основание кузова ----- */
+
+.body__base {
+    position: absolute;
+    bottom: 181px;
+    left: 159px;
+    width: 644px;
+    height: 20px;
+    z-index: 1;
+    background-color: #342f2f;
+}
+
+/* Нижняя часть машины*/
+
+.car__bottom {
+    position: absolute;
+    bottom: 85px;
+    left: 128px;
+    width: 1000px;
+    height: 100px;
+    z-index: 2;
+}
+
+/* Основание машины ------------------- */
+
+.bottom__base {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 942px;
+    background-color: #4a4545;
+    filter: drop-shadow(2px 2px 4px black);
+}
+
+/* Выхлопная труба-------------- */
+
+.bottom__tail-pipe {
+    position: absolute;
+    bottom: -20px;
+    left: -14px;
+    width: 109px;
+    height: 20px;
+    background-color: #232121;
+    border-radius: 0px 0px 90px 0px / 0px 0px 18px 0px;
+    cursor: grab;
+}
+
+.bottom__tail-pipe::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 7px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background-color: #2a2929;
+}
+
+/* Выхлоп --------- */
+
+.tail-pipe__exhaust {
+    position: absolute;
+    bottom: -15px;
+    right: 89px;
+    width: 150px;
+    height: 73px;
+    background: url(../img/7.png) 0 0 / 132px no-repeat;
+    visibility: hidden;
+}
+
+.bottom__tail-pipe:hover .tail-pipe__exhaust {
+    visibility: visible;
+}
+
+/* Бак машины ----------------- */
+
+.bottom-tank {
+    position: absolute;
+    top: 25px;
+    right: 313px;
+    width: 250px;
+    height: 62px;
+    border-radius: 13px;
+    background-color: #6d6565;
+    box-shadow: inset 7px 9px 8px 0px #4f4c46, 2px -2px 0px 0px #676262;
+    filter: drop-shadow(1px 4px 4px black);
+}
+
+/* Крепления бака ------ */
+
+.bottom-tank::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 38px;
+    width: 16px;
+    height: 5px;
+    background-color: #000;
+    filter: drop-shadow(1px 2px 2px rgb(39, 39, 39));
+}
+.bottom-tank::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: 38px;
+    width: 16px;
+    height: 5px;
+    background-color: #000;
+    filter: drop-shadow(1px 2px 2px rgb(39, 39, 39));
+}
+.tank__belts {
+    width: 130px;
+    height: 66px;
+    margin: -2px auto;
+    border-right: 11px solid rgb(62 60 60);
+    border-left: 11px solid rgb(62 60 60);
+    border-radius: 4px;
+}
+
+/* Крышка бака ---------- */
+
+.tank__cap {
+    position: absolute;
+    top: 13px;
+    left: 18px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #882c2c;
+    box-shadow: 0px 0px 1px 0px #2c1f1f;
+    filter: drop-shadow(1px 2px 2px black);
+}
+
+.tank__cap::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 8px;
+    width: 4px;
+    height: 24px;
+    border-radius: 20px;
+    background-color: #882c2c;
+    box-shadow: inset 0px 0px 2px 0px #2c1f1f, inset 0px 0px 0px 0px #4f1e1e;
+    filter: drop-shadow(1px 1px 0px black);
+}
+.tank__cap::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -2px;
+    width: 24px;
+    height: 4px;
+    border-radius: 20px;
+    background-color: #882c2c;
+    box-shadow: inset 0px 0px 2px 0px #2c1f1f, inset 0px 0px 0px 0px #4f1e1e;
+    filter: drop-shadow(1px 1px 0px black);
+}
+
+/* КАБИНА ======================== */
+
+.car__cabin {
+    position: absolute;
+    top: 0;
+    left: 838px;
+    width: 300px;
+    height: 500px;
+}
+
+/* Главная коробка ------------ */
+
+.cabin__box {
+    position: absolute;
+    left: 1px;
+    bottom: 15px;
+    width: 275px;
+    height: 360px;
+    z-index: 3;
+    background-color: #d4b347;
+    border-radius: 300px 183px 285px 101px / 1px 350px 10px 39px;
+    box-shadow: -3px -3px 10px 0px #4a4232;
+}
+
+/* Фара ----------------- */
+
+.cabin__headlight {
+    position: absolute;
+    bottom: 37px;
+    right: -8px;
+    width: 8px;
+    height: 54px;
+    background-color: #c3d8d7;
+    border-bottom-right-radius: 22px 45px;
+    border-top-right-radius: 25px 48px;
+    border-right: 1px solid #648fc6;
+    box-shadow: 3px 0px 0px rgb(226 198 41 / 52%), inset -3px -2px 3px rgb(139 165 210 / 52%);
+    cursor: grab;
+}
+
+.cabin__headlight:hover {
+    background-color: #cebd1f;
+    border: 2px solid #eaeff5;
+    box-shadow: 14px 0px 10px 14px rgb(226 198 41 / 52%), 13px 1px 13px 12px rgb(229 229 174 / 76%), inset -3px -2px 3px rgb(139 165 210 / 52%);
+}
+
+/* Дверь кабины ---------------- */
+
+.cabin__door {
+    position: absolute;
+    left: 67px;
+    top: 17px;
+    width: 191px;
+    height: 311px;
+    z-index: 0;
+    background-color: #a57920;
+    border-radius: 178px 193px 260px 103px / 3px 314px 10px 128px;
+    filter: drop-shadow(1px 2px 3px rgb(34, 26, 13));
+}
+
+/* Зеркало снаружи ----------------------- */
+
+.cabin__door::after {
+    content: '';
+    position: absolute;
+    bottom: 111px;
+    right: 4px;
+    width: 30px;
+    height: 73px;
+    background-color: rgb(212 199 52);
+    border-radius: 18px 44px 8px 36px / 15px 57px 33px 55px;
+    box-shadow: inset 2px 4px 13px 0px white, inset -7px -7px 9px 3px #a1742b, -4px -1px 0px 2px #7c5425;
+    border: 1px solid #afaaa5f0;
+}
+
+/* Зеркало в кабине --------------- */
+
+.cabin__mirror {
+    position: absolute;
+    top: 76px;
+    right: 21.5px;
+    width: 27px;
+    height: 11px;
+    z-index: 1;
+    border-top: 4px solid black;
+    border-left: 2px solid black;
+    border-top-left-radius: 20px 13px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+}
+
+.cabin__mirror::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 20px;
+    height: 25px;
+    border-right: 4px solid black;
+    border-top: 2px solid black;
+    border-top-right-radius: 20px 10px;
+    border-top-left-radius: 11px 10px;
+    border-bottom-right-radius: 25px 18px;
+    border-bottom-left-radius: 6px 13px;
+    box-shadow: -2px 1px 0px #615656, inset -2px 1px 3px 0px #98acc0;
+}
+
+/* Ёлка на зеркале----------------- */
+
+.cabin__tree {
+    position: absolute;
+    top: 103px;
+    right: 20px;
+    width: 13px;
+    height: 19px;
+    z-index: 2;
+    background: url(../img/2.png) 0 0 / 14px no-repeat;
+}
+
+.cabin__tree::after {
+    content: '';
+    position: absolute;
+    top: -27px;
+    right: 5.5px;
+    width: 1px;
+    height: 29px;
+    z-index: 6;
+    background-color: #868585;
+    border-radius: 14px 14px 0px 0px;
+}
+
+/* Лампа в кабине ------------- */
+
+.cabin__lamp {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    width: 62px;
+    height: 8px;
+    z-index: 2;
+    border-radius: 0px 0px 66px 66px / 0px 0px 10px 10px;
+    background-color: #e786178c;
+    box-shadow: 0px 2px 0px #804848a8, -1px 6px 14px 5px #c26626a8, inset 0px 0px 2px 0px #4f4516ad;
+    cursor: grab;
+}
+
+.cabin__lamp:hover {
+    background-color: #f9d22dc4;
+    box-shadow: 0px 4px 0px #ccbf58cc, 1px 5px 9px 5px #e7b827cc, inset 5px 12px 15px 6px #d4cdb4f2;
+}
+
+/* Окно -------------- */
+
+.cabin__window {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    width: 176px;
+    height: 189px;
+    z-index: 0;
+    border-radius: 194px 194px 278px 90px / 0px 350px 0px 0px;
+    background: url(../img/1.png) 5px 104px / 136px no-repeat, #fff;
+    box-shadow: inset -2px -1px 20px 15px #85a8d67a;
+}
+
+/* Дверная ручка ---------------- */
+
+.cabin__window::after {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: 7px;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    box-shadow: -3px 7px 0px 0px #342810;
+    border-radius: 194px 194px 278px 90px / 0px 350px 0px 0px;
+    filter: drop-shadow(0px 1px 2px #342810);
+}
+
+/* Кресло ------------------ */
+
+.cabin__window::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 17px;
+    height: 83px;
+    background-color: #9d3d3d;
+    border-top-right-radius: 19px 33px;
+    box-shadow: 5px 0px 0px 0px #321919, inset 0px 0px 9px 0px #511616, 0px -4px 2px 0px #632626;
+}
+
+/* Руль -------------------- */
+
+.cabin__steering-wheel {
+    position: absolute;
+    left: -12px;
+    top: 6px;
+}
+
+.steering-wheel__part-1 {
+    position: absolute;
+    top: 151px;
+    left: 115px;
+    width: 51px;
+    height: 22px;
+    border-radius: 50%;
+    border: 9px solid #090808;
+}
+
+.steering-wheel__part-1::before {
+    content: '';
+    position: absolute;
+    bottom: -19px;
+    right: 12px;
+    width: 7px;
+    height: 22px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: black;
+}
+
+.steering-wheel__part-1::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    right: 1px;
+    width: 31px;
+    height: 1.5px;
+    background-color: black;
+}
+
+.steering-wheel__part-2 {
+    position: absolute;
+    top: 151px;
+    left: 119px;
+    width: 45px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid rgb(77 60 60);
+    box-shadow: -1px 1px 1px 1px #8a8686;
+}
+
+.steering-wheel__part-2::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: 19px;
+    width: 2px;
+    height: 9px;
+    background-color: #1b1919;
+}
+
+/* Спойлер на крыше ----------------- */
+
+.car__spoiler {
+    position: absolute;
+    left: -4px;
+    top: 0px;
+    width: 169px;
+    height: 116px;
+    background-color: #d48d07;
+    border-radius: 0px 552px 233px 0px /64px 402px 0px 0px;
+    box-shadow: inset 0px 1px 20px 0px #d4b347;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+/* Блоки колёс -------------------------------------- */
+
+.car__wheels {
+    position: relative;
+    display: inline-block;
+    bottom: 177px;
+    left: 224px;
+    width: 900px;
+    height: 140px;
+}
+
+.wheel__left-container {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 280px;
+    height: 140px;
+}
+
+.wheel__right-container {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 280px;
+    height: 140px;
+}
+
+/* Сами колёса ------------------------ */
+
+.wheel__left {
+    position: absolute;
+    top: 13px;
+    left: 90px;
+    width: 120px;
+    height: 120px;
+    z-index: 6;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: rgb(42, 44, 44);
+    box-shadow: inset 0px -1px 11px 7px #383b3c, -1px -2px 2px 1px #707376;
+}
+
+.wheel__right {
+    position: absolute;
+    top: 11px;
+    right: 71px;
+    width: 120px;
+    height: 120px;
+    z-index: 6;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: rgb(49, 53, 53);
+    box-shadow: inset 0px -1px 11px 7px #383b3c, -1px -2px 2px 1px #707376;
+}
+
+.wheel__inner {
+    position: absolute;
+    top: 26px;
+    right: 29px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: rgb(90, 94, 94);
+    box-shadow: inset -4px 2px 6px 2px #6f7172, 0px 1px 0px 1px #d0c1a7;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+/* Центр колеса ------ */
+
+.wheel__center {
+    position: absolute;
+    top: 23px;
+    right: 24px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: rgb(49, 51, 51);
+    box-shadow: rgb(132 128 118) 1px -2px 0px 0px inset, rgb(216 218 79 / 21%) 1px -2px 3px 0px;
+}
+
+.wheel__center::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 0px 0px 31px 24px;
+    border-radius: 50%;
+    background-color: rgb(165 155 155);
+}
+.wheel__center::after {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 8px 0px 30px -43px;
+    border-radius: 50%;
+    background-color: rgb(165 155 155);
+}
+.wheel__inner::after {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 0px 0px 2px 27px;
+    border-radius: 50%;
+    background-color: rgb(165 155 155);
+}
+.wheel__inner::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 0px 0px 9px 26px;
+    border-radius: 50%;
+    background-color: rgb(165 155 155);
+}
+
+/* Крепление правого колеса --------------- */
+
+.wheel__right-top {
+    position: absolute;
+    top: -31px;
+    left: 53px;
+    width: 180px;
+    height: 153px;
+    z-index: 4;
+    border-radius: 50%;
+    border-top: 79px solid #c6c8d0;
+    box-shadow: 4px -20px 0px 0px #d4b347;
+}
+
+.wheel__right-top-inner {
+    position: absolute;
+    top: -23px;
+    left: 64px;
+    width: 159px;
+    height: 96px;
+    z-index: 4;
+    border-radius: 50%;
+    background-color: #000;
+    box-shadow: inset 0px -1px 16px 0px #6d6b64, inset 1px 4px 0px 0px #4f4c46, inset 1px 7px 0px 0px #dfc9a3;
+}
+
+/* Крепление левого колеса -------------------- */
+
+.wheel__left-top {
+    position: absolute;
+    top: -9px;
+    left: 39px;
+    width: 220px;
+    height: 77px;
+    z-index: 3;
+    border-top: 14px solid rgb(134 110 47);
+    border-right: 15px solid rgb(134 110 47);
+    border-left: 15px solid rgb(134 110 47);
+    border-radius: 220px 220px 220px 126px / 75px 75px 31px 36px;
+    box-shadow: inset -1px -16px 0px 5px #cfd2dc, 0px -5px 2px 0px #4f4c46, -1px -7px 0px 0px #dfc9a3;
+}
+
+.wheel__left-top-back {
+    position: absolute;
+    top: -35px;
+    left: 13px;
+    width: 265px;
+    height: 83px;
+    z-index: 0;
+    border: 1px solid;
+    border-radius: 254px 227px 265px 265px / 0px 4px 89px 89px;
+    background-color: black;
+    box-shadow: inset -1px -16px 0px 0px #484848, inset 0px -20px 2px 0px #727272, inset 1px -15px 20px 8px #959494;
+}
+
+
+/* FOOTER ================== */
+
+.footer {
+    background-color: rgb(80 76 76 / 54%);
+    min-height: 200px;
+}
+
+.footer__container {
+    max-width: 80%;
+    margin: 0px auto;
+    padding: 27px 0px 40px;
+}
+
+.footer__socials {
+    max-width: 90%;
+    margin: 30px auto 40px;
+    text-align: center;
+}
+
+.footer__socials a {
+    margin: 0px 30px 0px 0px;
+    background-color: #e6de94;
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50%;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.footer__socials a:last-child {
+    margin-right: 0;
+}
+
+.footer__date {
+    text-align: center;
+    font-weight: 200;
+    filter: drop-shadow(2px 4px 1px #e6de94);
+}
